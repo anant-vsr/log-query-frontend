@@ -78,89 +78,89 @@ const fetchLogs = async () => {
 
 
 
-const fetchLogsByTraceId = async () => {
-  try {
-    const response = await axios.get('https://logging-query-interface-deployed.onrender.com/logsByTraceId', {
-      params: queryParams,
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsByTraceId = async () => {
+//   try {
+//     const response = await axios.get('https://logging-query-interface-deployed.onrender.com/logsByTraceId', {
+//       params: queryParams,
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-const fetchLogsBySpanId = async () => {
-  try {
-    const response = await axios.get('https://logging-query-interface-deployed.onrender.com/logsBySpanId', {
-      params: queryParams,
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsBySpanId = async () => {
+//   try {
+//     const response = await axios.get('https://logging-query-interface-deployed.onrender.com/logsBySpanId', {
+//       params: queryParams,
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-const fetchLogsByCommit = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/logsByCommit', {
-      params: queryParams,
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsByCommit = async () => {
+//   try {
+//     const response = await axios.get('http://localhost:5000/logsByCommit', {
+//       params: queryParams,
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-const fetchLogsByParentResourceId = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/logsByParentResourceId', {
-      params: queryParams,
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsByParentResourceId = async () => {
+//   try {
+//     const response = await axios.get('http://localhost:5000/logsByParentResourceId', {
+//       params: queryParams,
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-const fetchLogsByLevel = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/logsByLevel', {
-      params: { level: queryParams.level },
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsByLevel = async () => {
+//   try {
+//     const response = await axios.get('http://localhost:5000/logsByLevel', {
+//       params: { level: queryParams.level },
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-const fetchLogsByMessage = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/logsByMessage', {
-       params: queryParams,
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsByMessage = async () => {
+//   try {
+//     const response = await axios.get('http://localhost:5000/logsByMessage', {
+//        params: queryParams,
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
-const fetchLogsByResourceId = async () => {
-  try {
-    const response = await axios.get('http://localhost:5000/logsByResourceId', {
-      params: queryParams,
-      ...axiosConfig,
-    });
-    setLogs(response.data);
-  } catch (error) {
-    console.error(error);
-  }
-};
+// const fetchLogsByResourceId = async () => {
+//   try {
+//     const response = await axios.get('http://localhost:5000/logsByResourceId', {
+//       params: queryParams,
+//       ...axiosConfig,
+//     });
+//     setLogs(response.data);
+//   } catch (error) {
+//     console.error(error);
+//   }
+// };
 
 const fetchLogsByTimestampRange = async () => {
   try {
